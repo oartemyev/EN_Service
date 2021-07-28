@@ -42,7 +42,7 @@ func (t *cfgFile) Load(filename string) {
 		if len(a) > 1 {
 			t.c[strings.Trim(a[0], " \t")] = append(t.c[strings.Trim(a[0], " \t")], a[1])
 		}
-	}
+	}                            
 	log.Printf("len(t.c)=%d", len(t.c))
 }
 
